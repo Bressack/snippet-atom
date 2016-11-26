@@ -1,6 +1,6 @@
-Snippet pour atom, contient quelques snippet telle aue while, if, if else, etc ...
+Snippet pour atom, contient quelques snippets telle que while, if, if else, etc ...
 
-MAIS SURTOUT : contient les snippet pour L'NTEGRALITE de la LIBFT.
+MAIS SURTOUT : contient les snippets pour L'NTEGRALITE de la LIBFT.
 
 
 Installation :
@@ -15,6 +15,6 @@ Utilisation :
 
     Dans atom, dans un fichier valide (.c, .h, .cpp)
     Commencez a ecrire le nom de la fonction ft_... ou while ou if, et un menu deroulant vous apparrait, selectionnez
-    a l'aide du clavier ou de la souris votre choix.
+    à l'aide du clavier ou de la souris votre choix.
     
 Enjoy all :D
