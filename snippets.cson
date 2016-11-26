@@ -1,0 +1,233 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+'.source.c, .source.cpp, .source.objc, .source.objcpp':
+	'While-1':
+		'prefix': 'while1'
+		'body': 'while (${1:})\n\t${2:}\n${3:}'
+	'if-1':
+	    'prefix': 'if1'
+	    'body': 'if (${1:})\n\t${2:}\n${3:}'
+	'While-2':
+	    'prefix': 'while2'
+	    'body': 'while (${1:})\n{\n\t${2:}\n}\n${3:}'
+	'if-2':
+	    'prefix': 'if2'
+	    'body': 'if (${1:})\n{\n\t${2:}\n}\n${3:}'
+	'main':
+	    'prefix': 'main42'
+	    'body': '(void)\tmain(int ac, char **av)\n{\n\t${1:}\n\treturn (0);\n}\n'
+	'if-else1':
+	    'prefix': 'ifel1'
+	    'body': 'if (${1:})\n\t${2:}\nelse\n\t${3:}\n${4:}'
+	'if-else2':
+	    'prefix': 'ifel2'
+	    'body': 'if (${1:})\n{\n\t${2:}\n}\nelse\n{\n\t${3:}\n}\n${4:}'
+	'new_fonction':
+	    'prefix': 'nfon'
+	    'body': '${1:/*sortie*/}\t${2:nom_fonction}(${3:/*argument*/})\n{\n\t${4:/*corps fonction*/}\n}\n'
+	'return':
+	    'prefix': 'return'
+	    'body': 'return (${1:0});'
+	'struct':
+	    'prefix': 'struct'
+	    'body': 'typedef struct\t\ts_${1:struct}\n{\n\t${2:}\n}\t\t\t\t\tt_${1:struct};'
+	'malloc':
+		'prefix': 'malloc42'
+		'body': '(${1:}*)malloc(sizeof(${1:}) * ${2:size});'
+		# LIBFT #
+	'ft_atoi':
+		'prefix': 'ft_atoi'
+		'body': 'ft_atoi(${1:const char *str})${6:}'
+	'ft_bzero':
+		'prefix': 'ft_bzero'
+		'body': 'ft_bzero(${1:void *s}, ${2:int n})${6:}'
+	'ft_isalnum':
+		'prefix': 'ft_isalnum'
+		'body': 'ft_isalnum(${1:int c)}${6:}'
+	'ft_isalpha':
+		'prefix': 'ft_isalpha'
+		'body': 'ft_isalpha(${1:int c})${6:}'
+	'ft_isascii':
+		'prefix': 'ft_isascii'
+		'body': 'ft_isascii(${1:int c})${6:}'
+	'ft_isdigit':
+		'prefix': 'ft_isdigit'
+		'body': 'ft_isdigit(${1:int c})${6:}'
+	'ft_isprint':
+		'prefix': 'ft_isprint'
+		'body': 'ft_isprint(${1:int c})${6:}'
+	'ft_itoa':
+		'prefix': 'ft_itoa'
+		'body': 'ft_itoa(${1:int n})${6:}'
+	'ft_memalloc':
+		'prefix': 'ft_memalloc'
+		'body': 'ft_memalloc(${1:size_t size})${6:}'
+	'ft_memcpy':
+		'prefix': 'ft_memcpy'
+		'body': 'ft_memcpy(${1:void *s1}, ${2:const void *s2}, ${3:size_t n})${6:}'
+	'ft_memchr':
+		'prefix': 'ft_memchr'
+		'body': 'ft_memchr(${1:const void *s}, ${2:int c}, ${3:size_t n})${6:}'
+	'ft_memcmp':
+		'prefix': 'ft_memcmp'
+		'body': 'ft_memcmp(${1:const void *s1}, ${2:const void *s2}, ${3:size_t n})${6:}'
+	'ft_memccpy':
+		'prefix': 'ft_memccpy'
+		'body': 'ft_memccpy(${1:void *s1}, ${2:const void *s2}, ${3:int c}, ${4:size_t n})${6:}'
+	'ft_memdel':
+		'prefix': 'ft_memdel'
+		'body': 'ft_memdel(${1:void **ap})${6:}'
+	'ft_memmove':
+		'prefix': 'ft_memmove'
+		'body': 'ft_memmove(${1:void *dst}, ${2:const void *src}, ${3:size_t len})${6:}'
+	'ft_memset':
+		'prefix': 'ft_memset'
+		'body': 'ft_memset(${1:void *b}, ${2:int c}, ${3:size_t len})${6:}'
+	'ft_putchar':
+		'prefix': 'ft_putchar'
+		'body': 'ft_putchar(${1:char c})${6:}'
+	'ft_putchar':
+		'prefix': 'ft_putchar'
+		'body': 'ft_putchar_fd(${1:char c}, ${2:int fd})${6:}'
+	'ft_putendl':
+		'prefix': 'ft_putendl'
+		'body': 'ft_putendl(${1:char const *s})${6:}'
+	'ft_putendl':
+		'prefix': 'ft_putendl'
+		'body': 'ft_putendl_fd(${1:char const *s}, ${2:int fd})${6:}'
+	'ft_putnbr':
+		'prefix': 'ft_putnbr'
+		'body': 'ft_putnbr(${1:int n})${6:}'
+	'ft_putchar':
+		'prefix': 'ft_putchar'
+		'body': 'ft_putnbr_fd(${1:int n}, ${2:int fd})${6:}'
+	'ft_putendl':
+		'prefix': 'ft_putendl'
+		'body': 'ft_putstr(${1:char const *s})${6:}'
+	'ft_putnbr':
+		'prefix': 'ft_putnbr'
+		'body': 'ft_putstr_fd(${1:char const *s}, ${2:int fd})${6:}'
+	'ft_strcat':
+		'prefix': 'ft_strcat'
+		'body': 'ft_strcat(${1:char *s1}, ${2:const char *s2})${6:}'
+	'ft_strchr':
+		'prefix': 'ft_strchr'
+		'body': 'ft_strchr(${1:const char *s}, ${2:int c})${6:}'
+	'ft_strclr':
+		'prefix': 'ft_strclr'
+		'body': 'ft_strclr(c${1:har *s})${6:}'
+	'ft_strcmp':
+		'prefix': 'ft_strcmp'
+		'body': 'ft_strcmp(${1:const char *s1}, ${2:const char *s2})${6:}'
+	'ft_strcpy':
+		'prefix': 'ft_strcpy'
+		'body': 'ft_strcpy(${1:char *dst}, ${2:const char *src})${6:}'
+	'ft_strdel':
+		'prefix': 'ft_strdel'
+		'body': 'ft_strdel(${1:char **as})${6:}'
+	'ft_strndup':
+		'prefix': 'ft_strndup'
+		'body': 'ft_strdup(${1:char *src})${6:}'
+	'ft_strequ':
+		'prefix': 'ft_strequ'
+		'body': 'ft_strequ(${1:char const *s1}, ${2:char const *s2})${6:}'
+	'ft_striter':
+		'prefix': 'ft_striter'
+		'body': 'ft_striter(${1:char *s}, ${2:void} (*${3:f})(${4:char *}))${6:}'
+	'ft_striteri':
+		'prefix': 'ft_striteri'
+		'body': 'ft_striteri(${1:char *s}, ${2:void} (*${3:f})(${4:unsigned int}, ${5:char *}))${6:}'
+	'ft_strjoin':
+		'prefix': 'ft_strjoin'
+		'body': 'ft_strjoin(${1:char const *s1}, ${2:char const *s2})${6:}'
+	'ft_strlcat':
+		'prefix': 'ft_strlcat'
+		'body': 'ft_strlcat(${1:char *dst}, ${2:char *src}, ${3:size_t size})${6:}'
+	'ft_strlen':
+		'prefix': 'ft_strlen'
+		'body': 'ft_strlen(${1:const char *s})${6:}'
+	'ft_strmap':
+		'prefix': 'ft_strmap'
+		'body': 'ft_strmap(${1:char const *s}, ${2:char} (*${3:f})(${4:char}))${6:}'
+	'ft_strmapi':
+		'prefix': 'ft_strmapi'
+		'body': 'ft_strmapi(${1:char const *s}, ${2:char} (*${3:f})(${4:unsigned int}, ${5:char}))${6:}'
+	'ft_strncat':
+		'prefix': 'ft_strncat'
+		'body': 'ft_strncat(${1:char *s1}, ${2:const char *s2}, ${3:size_t n})${6:}'
+	'ft_strncmp':
+		'prefix': 'ft_strncmp'
+		'body': 'ft_strncmp(${1:const char *s1}, ${2:const char *s2}, ${3:size_t n})${6:}'
+	'ft_strncpy':
+		'prefix': 'ft_strncpy'
+		'body': 'ft_strncpy(${1:char *s1}, ${2:const char *s2}, ${3:size_t n})${6:}'
+	'ft_strndup':
+		'prefix': 'ft_strndup'
+		'body': 'ft_strndup(${1:const char *s}, ${2:size_t n})${6:}'
+	'ft_strnequ':
+		'prefix': 'ft_strnequ'
+		'body': 'ft_strnequ(${1:char const *s1}, ${2:char const *s2}, ${3:size_t n})${6:}'
+	'ft_strnew':
+		'prefix': 'ft_strnew'
+		'body': 'ft_strnew(${1:size_t size})${6:}'
+	'ft_strnstr':
+		'prefix': 'ft_strnstr'
+		'body': 'ft_strnstr(${1:char *s1}, ${2:char *s2}, ${3:size_t n})${6:}'
+	'ft_strrchr':
+		'prefix': 'ft_strrchr'
+		'body': 'ft_strrchr(${1:const char *s}, ${2:int c})${6:}'
+	'ft_strstr':
+		'prefix': 'ft_strstr'
+		'body': 'ft_strstr(${1:const char *s1}, ${2:const char *s2})${6:}'
+	'ft_strsub':
+		'prefix': 'ft_strsub'
+		'body': 'ft_strsub(${1:char const *s}, ${2:unsigned int start}, ${3:size_t len})${6:}'
+	'ft_strsplit':
+		'prefix': 'ft_strsplit'
+		'body': 'ft_strsplit(${1:char const *s}, ${2:char c})${6:}'
+	'ft_strtrim':
+		'prefix': 'ft_strtrim'
+		'body': 'ft_strtrim(${1:char const *s})${6:}'
+	'ft_tolower':
+		'prefix': 'ft_tolower'
+		'body': 'ft_tolower(${1:int c})${6:}'
+	'ft_toupper':
+		'prefix': 'ft_toupper'
+		'body': 'ft_toupper(${1:int c})${6:}'
+	'ft_lstnew':
+		'prefix': 'ft_lstnew'
+		'body': 'ft_lstnew(${1:void const *content, ${2:size_t content_size)${6:}'
+	'ft_lstdelone':
+		'prefix': 'ft_lstdelone'
+		'body': 'ft_lstdelone(${1:t_list **alst}, ${2:void} (*${3:del})(${4:void *}, ${5:size_t}))${6:}'
+	'ft_lstdel':
+		'prefix': 'ft_lstdel'
+		'body': 'ft_lstdel(${1:t_list **alst}, ${2:void} (*${3:del})(${4:void *}, ${5:size_t}))${6:}'
+	'ft_lstadd':
+		'prefix': 'ft_lstadd'
+		'body': 'ft_lstadd(${1:t_list **alst}, ${2:t_list *new})${6:}'
+	'ft_lstiter':
+		'prefix': 'ft_lstiter'
+		'body': 'ft_lstiter(${1:t_list *lst}, ${2:void} (*${3:f})(${4:t_list *elem}))${6:}'
+	'ft_lstmap':
+		'prefix': 'ft_lstmap'
+		'body': 'ft_lstmap(${1:t_list *lst}, ${2:t_list} *(*${3:f})(${4:t_list *elem}))${6:}'
